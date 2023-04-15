@@ -4,6 +4,8 @@
         sans-serif;
     --secondary-font-family: 'Raleway',
             sans-serif;
+            --primary-color:#212121;
+            --secondary-color:#757575;
 }
 .list{
     list-style:none;
@@ -13,11 +15,12 @@
 }
 body{
     font-family: var(--primary-font-family);
+    color: var(--primary-color);
 }
 
 
 /* Start header */
-.active-page{
+a.active-page{
    color: #2196F3;
 }
 
@@ -27,7 +30,7 @@ body{
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        color: #212121;
+        color:var(--primary-color);
 }
 .nav-list-link:hover,
 .nav-list-link:focus
@@ -40,7 +43,7 @@ body{
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        color: #757575;
+        color: var(--secondary-color);
 }
 .contact-mail:hover,
 .contact-mail:focus,
@@ -62,29 +65,30 @@ body{
     color: #2196F3;
 }
 
-.studio {
-    color: #000000
+.theme-white {
+    color: #000000;
 }
-
-.img-caption {
+.theme-dark{
+    color: #FFFFFF;
+}
+.section-title {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
         text-align: center;
         letter-spacing: 0.03em;
-        color: #212121;
 }
 /* End components */
 
 /* Start hero */
-.hero {
+/* .hero {
     /* position: absolute;
         width: 1600px;
         height: 600px;
         left: 0px;
         top: 80px;
-        /* background: #2F303A;  */
-    }
+        /* background: #2F303A;}  */
+    
 .main-title {
         font-weight: 900;
         font-size: 44px;
@@ -96,7 +100,8 @@ body{
 }
 .modal-btn
  {
-        font-weight: 700;
+    font-family: var(--primary-font-family); 
+    font-weight: 700;
         font-size: 16px;
         line-height: 1.88;
         display: flex;
@@ -107,39 +112,39 @@ body{
         background: #2196F3;
 }
 .modal-btn:hover,
-.modal-btn:focus,
-.modal-btn:active
+.modal-btn:focus
 {
     background: var(--accent-color);
 }
+.modal-btn:active{
+background-color: #188CE8;
+}
 /* End hero */
 
-/* Start about us */
-.about-us-item {
+/* Start section */
+.section-item {
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: #212121;
 }
 .description {
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
         letter-spacing: 0.03em;
-        color: #757575;
-}
-/* End about us */
+        color: var(--secondary-color);
+        }
+/* End section*/
 
-/* Start our team */
+/* Start section team */
 .team-desc {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.19;
         /* text-align: center; */
         letter-spacing: 0.03em;
-        color: #212121;
 }
 .prof-desc {
         font-weight: 400;
@@ -147,20 +152,65 @@ body{
         line-height: 1.19;
         /* text-align: center; */
         letter-spacing: 0.03em; 
-        color: #757575;
-}
-/* End our team */
+        color: var(--secondary-color);
+        }
+
+/* End section team */
 
 /* Start footer */
-.contacts-link {
+.contacts-list .address {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     /* color: #FFFFFF; */
 }
-.contacts-link:hover,
-.contacts-link:focus{
+.contacts-list .address:hover,
+.contacts-list .address:focus{
     color: var(--accent-color);
 }
+.contacts-link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        /* color: rgba(255, 255, 255, 0.6); */
+}
+
+/* PORTFOLIO */
+
+.work-list {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+}
+.work-desc {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.03em;
+        color:var(--secondary-color);
+        }
+.filter-btn {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.63;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--primary-color);
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    color: #FFFFFF;
+    background-color:var(--accent-color);
+}
+/* .filter-btn:active{
+    background: #2196F3;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px; */
+
