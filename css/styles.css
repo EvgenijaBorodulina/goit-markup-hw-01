@@ -30,7 +30,8 @@ a.active-page{
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        color:var(--primary-color);
+        /* color:var(--primary-color); */
+        color: currentColor;
 }
 .nav-list-link:hover,
 .nav-list-link:focus
@@ -130,7 +131,6 @@ background-color: #188CE8;
         text-transform: uppercase;
 }
 .description {
-        font-weight: 400;
         font-size: 14px;
         line-height: 24px;
         letter-spacing: 0.03em;
@@ -147,7 +147,6 @@ background-color: #188CE8;
         letter-spacing: 0.03em;
 }
 .prof-desc {
-        font-weight: 400;
         font-size: 16px;
         line-height: 1.19;
         /* text-align: center; */
@@ -188,29 +187,41 @@ background-color: #188CE8;
         letter-spacing: 0.06em;
 }
 .work-desc {
-        font-weight: 400;
         font-size: 16px;
         line-height: 1.88;
         letter-spacing: 0.03em;
         color:var(--secondary-color);
         }
 .filter-btn {
+    /* display: inline-block;
+    padding: 16px 18px; */
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.63;
         text-align: center;
         letter-spacing: 0.03em;
-        color: var(--primary-color);
+        /* color: var(--primary-color); */
+        color: currentColor;
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
     color: #FFFFFF;
     background-color:var(--accent-color);
+
 }
+/* td {
+    cursor: pointer
+} */
+
 /* .filter-btn:active{
     background: #2196F3;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
         border-radius: 4px; */
-
+html{
+    box-sizing: border-box;
+}
+*, *::before,*::after{
+    box-sizing: inherit;
+}
