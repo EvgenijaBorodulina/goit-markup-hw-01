@@ -17,51 +17,53 @@
 <!-- Header -->
 <body> 
     <header class="header">
-<a class="logo link" href="./index.html" lang="en">Web<span class="theme-white">Studio</span> </a>
-<nav class="navigation">
-    <ul class="nav-list list">
-    <li class="nav-list-item"><a class="nav-list-link active-page link" href="./index.html">Студія</a></li>
-    <li class="nav-list-item"><a class="nav-list-link link" href="./portfolio.html">Портфоліо</a></li>
-    <li class="nav-list-item"><a class="nav-list-link link" href="#contacts">Контакти</a></li>
-</ul>
-</nav>
- <a class="contact-mail link" href="">info@devstudio.com</a>
-    <a class="contact-number link" href="tel:+380961111111">+38 096 111 11 11</a>
+        <div class="container header-container">    
+        <nav class="navigation">
+            <ul class="nav-list list">
+               <li class="logo-item"><a class="logo link" href="./index.html" lang="en">Web<span class="theme-white">Studio</span> </a></li> 
+                <li class="nav-list-item"><a class="nav-list-link active-page link" href="./index.html">Студія</a></li>
+                <li class="nav-list-item"><a class="nav-list-link link" href="./portfolio.html">Портфоліо</a></li>
+                <li class="nav-list-item"><a class="nav-list-link link" href="#contacts">Контакти</a></li>
+            </ul>
+        </nav>
+        <ul class="list header-contact">
+        <li><a class="contact-mail link" href="">info@devstudio.com</a></li>
+        <li><a class="contact-number link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
+    </div>
     </header>
 
     <!-- Hero -->
     <main> 
     <section class="hero">
-<h1 class="main-title">Ефективні рішення для <br> вашого бізнесу</h1> 
+        <div class="hero-container">
+<h1 class="main-title">Ефективні рішення для вашого бізнесу</h1> 
 <button class="modal-btn" type="button">Замовити послугу</button>
+</div>
 </section>
 
 <!-- About -->
-<section class="section">
-    <h2 hidden>Наші переваги</h2>
+<section class="section pluses">
+    <div class="container">
 <ul class="section-list list">
     <li>
-        <h3 class="section-item">УВАГА ДО ДЕТАЛЕЙ</h3>
-    <p class="description">Ідейні міркування, і навіть початок <br> повсякденної роботи з формування позиції.</p>
+        <h2 class="section-item">УВАГА ДО ДЕТАЛЕЙ</h2>
+    <p class="description">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
     </li>
     <li>
-        <h3 class="section-item">ПУНКТУАЛЬНІСТЬ</h3>
-    <p class="description">Завдання організації, особливо рамки <br>і місце навчання кадрів тягне у себе.</p>
+        <h2 class="section-item">ПУНКТУАЛЬНІСТЬ</h2>
+    <p class="description">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
     </li>
     <li>
-        <h3 class="section-item">ПЛАНУВАННЯ</h3>
-    <p class="description">Так само консультація з широким <br>активом значною мірою зумовлює.</p>
+        <h2 class="section-item">ПЛАНУВАННЯ</h2>
+    <p class="description">Так само консультація з широким активом значною мірою зумовлює.</p>
     </li>
     <li>
-        <h3 class="section-item">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-    <p class="description">Значимість цих проблем настільки<br> очевидна, що реалізація планових <br>завдань.</p>
+        <h2 class="section-item">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
+    <p class="description">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
     </li>
 </ul>
-</section>
-
-<!-- Images -->
-<section class="section">
-    <h2 class="section-title">Чим ми займаємося</h2>
+    <h3 class="section-title container">Чим ми займаємося</h3>
     <ul class="section-list list">
     <li class="section-item">
         <img src="./images/box1.jpg" alt="Планшет на столі" width="370" height="294">
@@ -73,38 +75,42 @@
         <img src="./images/box3.jpg" alt="Планшет з кольоровим малюнком" width="370" height="294">
     </li>
     </ul>
+    </div>
 </section> 
 
-<section class="section">
-    <h2 class="section-title">Наша команда</h2>
-    <ul class="section-list list">
-        <li class="team-item">
+<section class="section team">
+    <div class="container">
+    <h3 class="section-title">Наша команда</h3>
+    <ul class="section-list container list">
+        <li class="team-card">
             <img src="./images/team-card-1.jpg" alt="Ігор Дем'яненко" width="270" height="260">
             <p class="team-desc">Ігор Дем'яненко <br> <span class="prof-desc"  lang="en">Product Designer</span> </p>
         </li>
-        <li class="team-item">
+        <li class="team-card">
             <img src="./images/team-card-2.jpg" alt="Ольга Рєпіна" width="270" height="260">
             <p class="team-desc">Ольга Рєпіна<br> <span class="prof-desc" lang="en">Frontend Developer</span></p>
         </li> 
-        <li class="team-item">
+        <li class="team-card">
             <img src="./images/team-card-3.jpg" alt="Микола Тарасов" width="270" height="260">
             <p class="team-desc">Микола Тарасов <br> <span class="prof-desc" lang="en">Marketing</span> 
             </p>
         </li> 
-        <li class="team-item">
+        <li class="team-card">
             <img src="./images/team-card-4.jpg" alt="Михайло Єрмаков" width="270" height="260">
             <p class="team-desc">Михайло Єрмаков <br> <span class="prof-desc" lang="en">UI Designer</span>
             </p>
         </li>
     </ul>
 </section>
+</div>
     </main>
 
     <!-- Footer -->
     <footer id="contacts">
+        <div class="container">
         <a class="logo link" href="./index.html" lang="en">Web<span class="theme-dark">Studio</span> </a>
 <address>
-    <ul class="contacts-list list">
+    <ul class="contacts-list list container">
    <li><a class="address link" href="https://goo.gl/maps/F2XNy4cZ5n9jZTvD7" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a> 
 </li> 
       <li><a class="contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -112,6 +118,7 @@
     <li> <a class="contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a> </li>
 </ul>
 </address>
+</div>
     </footer>
 </body>
 </html>

@@ -7,6 +7,22 @@
             --primary-color:#212121;
             --secondary-color:#757575;
 }
+
+h1, h2, h3, p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+ul,li {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+img {
+    display: block;
+}
+
 .list{
     list-style:none;
 }
@@ -20,12 +36,34 @@ body{
 
 
 /* Start header */
+.header{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: tomato;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 a.active-page{
    color: #2196F3;
 }
 
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .nav-list-link
  {
+    /* display: block; */
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -38,14 +76,25 @@ a.active-page{
  {
      color: var(--accent-color);
 }
+
+.header-contact{
+    display: flex;
+}
 .contact-mail,
-.contact-number{
+.contact-number
+{
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
         color: var(--secondary-color);
 }
+.contact-mail,
+.contact-number:not(:last-child) 
+{
+margin-right: 50px;
+}
+
 .contact-mail:hover,
 .contact-mail:focus,
 .contact-number:hover,
@@ -55,7 +104,28 @@ a.active-page{
 }
 /* End header */
 
+
 /* Start components */
+.container {
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section
+{  
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.pluses
+{background-color: #188CE8;}
+
+.team{
+    background-color:teal;
+}
+
 .logo {
     font-family: 'Raleway',
         sans-serif;
@@ -64,11 +134,13 @@ a.active-page{
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #2196F3;
+    margin-right: 94px;
 }
 
 .theme-white {
     color: #000000;
 }
+
 .theme-dark{
     color: #FFFFFF;
 }
@@ -78,67 +150,89 @@ a.active-page{
         line-height: 1.17;
         text-align: center;
         letter-spacing: 0.03em;
+        margin-bottom: 50px;
 }
 /* End components */
 
 /* Start hero */
-/* .hero {
-    /* position: absolute;
-        width: 1600px;
-        height: 600px;
-        left: 0px;
-        top: 80px;
-        /* background: #2F303A;}  */
-    
+
+
+.hero {
+        background-color: #2F303A;
+        padding-top: 200px;
+        padding-right: 452px;
+        padding-bottom: 280px;
+        padding-left: 452px;
+        text-align: center;
+        }
+
 .main-title {
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
-        text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        /* color: #FFFFFF; */
+        color: #FFFFFF;
+        margin-bottom: 30px;
 }
+
 .modal-btn
  {
+    padding: 10px 24px 10px 24px;
     font-family: var(--primary-font-family); 
     font-weight: 700;
         font-size: 16px;
         line-height: 1.88;
-        display: flex;
         align-items: center;
-        text-align: center;
         letter-spacing: 0.06em;
         color: #FFFFFF;
         background: #2196F3;
+        min-width: 200px; 
+        border-radius: 4px;
 }
+
 .modal-btn:hover,
 .modal-btn:focus
 {
     background: var(--accent-color);
 }
+
 .modal-btn:active{
 background-color: #188CE8;
 }
 /* End hero */
 
 /* Start section */
+.section-list {
+    display: flex;
+    justify-content: space-between;
+}
+
 .section-item {
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        flex-basis:calc(100%-30px*4)/4;
 }
 .description {
+        flex-basis: calc(100%-30px*4)/4;
         font-size: 14px;
         line-height: 24px;
         letter-spacing: 0.03em;
         color: var(--secondary-color);
+        margin-bottom: 118px;
         }
+
 /* End section*/
 
 /* Start section team */
+
+.team-card: :not(:first-child){
+margin-left: 30px;
+}
+
 .team-desc {
         font-weight: 500;
         font-size: 16px;
@@ -179,6 +273,11 @@ background-color: #188CE8;
 }
 
 /* PORTFOLIO */
+
+.wraper {
+    display: flexbox;
+    flex-direction: row;
+}
 
 .work-list {
         font-weight: 700;
