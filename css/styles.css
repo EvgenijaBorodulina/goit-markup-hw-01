@@ -105,6 +105,12 @@ margin-right: 50px;
  {
     color: var(--accent-color);
 }
+.contact-img{
+    margin-right: 10px;
+}
+.contact-item:hover .contact-img{
+    fill:var(--accent-color);
+}
 
 /* End header */
 
@@ -150,7 +156,12 @@ margin-right: 50px;
 
 .theme-dark{
     color: #FFFFFF;
-}
+    }
+.theme-dark .social-list-icon{
+        fill: #FFFFFF;
+     }
+    
+
 .section-title {
         font-weight: 700;
         font-size: 36px;
@@ -277,6 +288,7 @@ flex-wrap: wrap;
     margin-bottom: 30px;
 }
 
+
 /* End section*/
 
 /* Start section team */
@@ -323,7 +335,7 @@ margin-right:30px;
 .social-list-link{
     fill: gray;
 }
-.social-list-link:hover .social-list-icon
+.social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon{
     fill:FFFFFF;
 }
@@ -364,7 +376,22 @@ margin-right:30px;
 .contacts-link:focus{
     color: var(--accent-color);
 }
-
+.footer-address{
+    display: flex;
+    align-items: center;
+}
+.footer-right{
+    width: 206px;
+}
+.theme-dark .social-list-link{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.theme-dark .social-list-link:hover {
+    background-color: var(--accent-color);
+}
+.theme-dark.section-item{
+    margin-bottom: 20px;
+}
 /* PORTFOLIO */
 .portfolio{
     padding-top: 94px;
