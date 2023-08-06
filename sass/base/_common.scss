@@ -1,0 +1,36 @@
+h1,
+h2,
+h3,
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+ul,
+li {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+img {
+    display: block;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--primary-font-family);
+    color: var(--primary-color);
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
